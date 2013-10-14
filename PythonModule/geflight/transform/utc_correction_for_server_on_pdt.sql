@@ -49,7 +49,7 @@ where createdutc is not null;
 -- Metar Report: cols is
 -- date_time_issued
 -- -------------------------------------------------------------------------
-update fdwindreport 
+update metar_reports 
 set date_time_issued = date_time_issued - (interval '-7 hours')
 where date_time_issued is not null;
 
